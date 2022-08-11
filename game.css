@@ -1,0 +1,182 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(94,94,94,1) 0%, rgba(198,198,198,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 1em;
+}
+
+#feladatleiras {
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    bottom: 0;
+}
+
+#eredmenyhirdetes {
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 90%;
+    width: 90%;
+    background-color:   rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+button {
+    border: none;
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+    height: 60px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease
+}
+
+button:hover {
+    background-color: rgba(54, 54, 54, 0.5);
+    transform: scale(1.1);
+}
+
+.disableState {
+    pointer-events: none;
+    opacity: 30%;
+}
+
+#header {
+    padding-bottom: 20px;
+    display: flex;
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    user-select: none;
+}
+
+#indicators {
+    display: none;
+}
+
+#game {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+.cardRow {
+    display:    flex;
+    justify-content: center;
+    
+}
+
+#buttons {
+    display:flex;
+    flex-direction: column;
+}
+
+.card {
+
+    border-radius: 10px;
+    border-collapse: separate; 
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    user-select: none;
+}
+
+.cardsize-grid-s {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 5em;
+}
+
+.cardsize-grid-m {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+}
+
+.cardsize-grid-l {
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.cardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background: linear-gradient(45deg, rgba(94,94,94,1) 0%, rgba(198,198,198,1) 100%);
+    overflow: hidden;
+}
+
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-align:center;
+    transform: rotateY(180deg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+.foundMatch {
+    opacity: 0;
+    pointer-events: none;
+}

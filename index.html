@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="JavaScript memory game">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./game.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="title">
+                    <h2>MEMORY</h2>
+                </div>
+                <div id="indicators">
+                    <div id="timer">Eltelt idő: 00:00</div>
+                    <div id="steps">Lépések száma: 00</div>
+                </div>
+                <div id="buttons">
+                    <button id="start">Kezdés</button>
+                    <button id="gridtoggle" value="4">Könnyű</button>
+                </div>
+
+            </div>
+            <div id="game">
+                <div id="feladatleiras">
+                        <h2>PRÓBAFELADAT</h2>
+                        <p>Készíts egy memória játékot, a klasszikus memóriakártyás felfordítós játék javascriptes verzióját. 
+                        Az oldalon jelenjenek meg 4 sorban és 4 oszlopban lefordított kártyák.
+                        A kártyák értéke legyen vagy numerikus vagy szöveges karakter amelyből 8 pár (2 egyforma) egyedi kombináció.</p>
+                        <p>A játék menete:</p>
+                        <ul>
+                            <li>A játékos a `Kezd` gombra kattintva, kap egy friss leosztást, ahol véletlenszerűen helyezkednek el a lapok.</li>
+                            <li>A játékos egyszerre csak két kártyát fordíthat fel. </li>
+                            <li>Amennyiben a kártyák egyezőek, lekerülnek a képernyőről, és jelezzük, hogy hány párt talált meg a játékos.</li>
+                            <li>A játéknak akkor van vége, ha az utolsó párt is megtalálták. </li>
+                            <li>A játék végén gratulálunk a játékosnak és megmutatjuk a játékidőt.</li>
+                            <li>A játékos ekkor új játékot kezdhet. </li>
+                        </ul>
+                        <p>Eddig lenne az alap, ha belefér szeretném ha még ezt megcsinálnád:</p>
+                        <ul>
+                            <li>A játéktér mérete legyen változtatható (könnyű - 4*4, közepes 8*8, nehéz 12*12).</li>
+                        </ul>
+                        <p>Fontos:</p>
+                        <ul>
+                            <li>A játék működjön</li>
+                            <li>A kinézet és a viselkedés legyen hibamentes</li>
+                        </ul>
+                </div>
+                <div id="eredmenyhirdetes">
+                </div>
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
